@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jess & Mike — 18 de Julio de 2026</title>
+  <meta name="description" content="Boda de Jess & Mike — 18 de Julio de 2026, Carretera a El Salvador, Guatemala." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="#home">
+        <img class="brand-logo" src="Nosotros/J&M_Logo.jpg" alt="Jess & Mike logo">
+        <span>Jess & Mike</span>
+      </a>
+
+      <!-- Menús (uno por idioma; tu JS ya los muestra/oculta) -->
+      <ul class="nav-menu lang-es">
+        <li><a href="#historia" class="active">Nuestra Historia</a></li>
+        <li><a href="#boda">La Boda</a></li>
+        <li><a href="#rsvp">RSVP</a></li>
+        <li><a href="#regalos">Regalos</a></li>
+        <li><a href="#viaje">El Viaje</a></li>
+      </ul>
+
+      <ul class="nav-menu lang-en">
+        <li><a href="#historia" class="active">Our Story</a></li>
+        <li><a href="#boda">The Wedding</a></li>
+        <li><a href="#rsvp">RSVP</a></li>
+        <li><a href="#regalos">Gifts</a></li>
+        <li><a href="#viaje">Travel</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <!-- language buttons -->
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button class="lang-btn" id="btn-es" data-lang="es" type="button">ES</button>
+          <button class="lang-btn" id="btn-en" data-lang="en" type="button">EN</button>
+        </div>
+
+        <!-- (opcional) icono de búsqueda y hamburguesa -->
+        <button class="nav-search" aria-label="Buscar">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="7"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+        <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      </div>
+    </nav>
+  </header>
+
+
+
+  <main id="home">
+    <!-- INICIO / HERO -->
+    <section id="home-hero" class="container-xl">
+      <!-- ES -->
+      <div class="lang-es">
+        <h1 class="hero-date">18 de Julio de 2026</h1>
+
+        <!-- Tu foto principal -->
+        <img class="hero-photo" src="Nosotros/20250729_190703.jpg" alt="Jess & Mike caminando">
+
+        <div class="hero-divider"></div>
+
+        <h2 class="hero-kicker">¡NOS VAMOS A CASAR!</h2>
+        <p class="hero-sub">
+          Este sitio web tiene todo para que puedas celebrar con nosotros en Carretera a El Salvador, Guatemala
+        </p>
+      </div>
+
+      <!-- EN -->
+      <div class="lang-en">
+        <h1 class="hero-date">July 18, 2026</h1>
+
+        <img class="hero-photo" src="IMG_URL_PORTADA.jpg" alt="Jess & Mike walking">
+
+        <div class="hero-divider"></div>
+
+        <h2 class="hero-kicker">WE’RE GETTING MARRIED!</h2>
+        <p class="hero-sub">
+          This website has everything to celebrate with us in Carretera a El Salvador, Guatemala
+        </p>
+      </div>
+    </section>
+
+
+    <!-- HISTORIA / OUR STORY -->
+    <section id="historia" class="section container-xl story">
+
+      <!-- ES -->
+      <div class="lang-es">
+        <div class="story-grid">
+          <!-- Card 1 -->
+          <article class="story-card">
+            <img class="story-img" src="Nosotros/20231230_154833.jpg" alt="Panajachel">
+            <h3 class="story-title">Nos conocimos en<br>Panajachel</h3>
+            <p class="story-quote">"O eso creen todos, pero en realidad nos conocimos esa mañana en mi casa y desde ese día creo en el amor a primera vista" — Jess</p>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="story-card">
+            <img class="story-img" src="Nosotros/20240105_120750(1).jpg" alt="Antigua Guatemala">
+            <h3 class="story-title">Nuestra 1ra Cita fue en<br>Antigua</h3>
+            <p class="story-quote">"Pasamos el día entero entre ruinas, iglesias y una gran vista desde el Cerro de la Cruz. Tuve la mejor guía de turistas que pude pedir" — Mike</p>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="story-card">
+            <img class="story-img" src="Nosotros/20240224_160346.jpg" alt="San Valentín">
+            <h3 class="story-title">Y regresó a una Cita de<br>San Valentín</h3>
+            <p class="story-quote">"Mientras yo pensaba que había sido una linda historia de Navidad, él estaba planeando nuestra próxima cita, y desde ese día supe que la distancia no nos iba a separar" — Jess</p>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="story-card">
+            <img class="story-img" src="Nosotros/20240616_180311.jpg" alt="Cleveland">
+            <h3 class="story-title">Nos dijimos “¡Te amo!”<br>en Cleveland</h3>
+            <p class="story-quote">"Exploramos una nueva ciudad juntos y supe que quería seguir creando memorias con ella el resto de mi vida" — Mike</p>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="story-card">
+            <img class="story-img" src="Nosotros/20250221_115017.jpg" alt="Nueva York">
+            <h3 class="story-title">Nos hicimos novios<br>en Nueva York</h3>
+            <p class="story-quote">"Podemos llevar 2 años saliendo y viajando, pero soy una niña bien y tienes que preguntarme" — Jess</p>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="story-card">
+            <img class="story-img" src="Nosotros/20250704_145422(1).jpg" alt="Propuesta">
+            <h3 class="story-title">Y decidimos<br>casarnos</h3>
+            <p class="story-quote">Reviviendo nuestra primera cita, nos dimos cuenta de que aquí queremos que nuestra historia de amor dure para siempre.</p>
+          </article>
+        </div>
+      </div>
+
+      <!-- EN -->
+      <div class="lang-en">
+        <div class="story-grid">
+          <article class="story-card">
+            <img class="story-img" src="Nosotros/20231230_154833.jpg" alt="Panajachel">
+            <h3 class="story-title">We met in<br>Panajachel</h3>
+            <p class="story-quote">"Or so everyone thinks — in reality, we met that morning at my place, and since that day I believe in love at first sight" — Jess</p>
+          </article>
+
+          <article class="story-card">
+            <img class="story-img" src="Nosotros/20240105_120750(1).jpg" alt="Antigua Guatemala">
+            <h3 class="story-title">Our first date was in<br>Antigua</h3>
+            <p class="story-quote">"We spent the day among ruins, churches, and the view from Cerro de la Cruz. I had the best tour guide I could ask for" — Mike</p>
+          </article>
+
+          <article class="story-card">
+            <img class="story-img" src="Nosotros/20240224_160346.jpg" alt="Valentine’s Day">
+            <h3 class="story-title">Then came a<br>Valentine’s date</h3>
+            <p class="story-quote">"While I thought it was just a sweet Christmas story, he was planning our next date; I knew distance wouldn’t keep us apart" — Jess</p>
+          </article>
+
+          <article class="story-card">
+            <img class="story-img" src="Nosotros/20240616_180311.jpg" alt="Cleveland">
+            <h3 class="story-title">We said “I love you”<br>in Cleveland</h3>
+            <p class="story-quote">"We explored a new city together and I realized I wanted to keep making memories with her for the rest of my life" — Mike</p>
+          </article>
+
+          <article class="story-card">
+            <img class="story-img" src="Nosotros/20250221_115017.jpg" alt="New York">
+            <h3 class="story-title">We made it official<br>in New York</h3>
+            <p class="story-quote">"We’d been dating and traveling for 2 years, but I’m a proper lady — you have to ask me" — Jess</p>
+          </article>
+
+          <article class="story-card">
+            <img class="story-img" src="Nosotros/20250704_145422(1).jpg" alt="Proposal">
+            <h3 class="story-title">And we decided<br>to get married</h3>
+            <p class="story-quote">Reliving our first date, we realized this is where our love story should last forever.</p>
+          </article>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- BODA / WEDDING -->
+    <section id="boda" class="section container">
+
+      <!-- ES -->
+      <div class="lang-es">
+        <h2 class="section-head">EL GRAN DÍA <span class="subtitle">18 de Julio de 2026</span></h2>
+
+        <p class="meta"><strong>4:30 PM – 11:00 PM</strong><span class="place">Jardín el Cerro</span></p>
+
+        <!-- (opcional) imagen a la derecha -->
+        <img class="figure-right" src="IMG_URL_NOVIOS_TENIS.jpg" alt="Novios con tenis">
+
+        <p class="lead">
+          La Boda se llevará a cabo en <strong>Jardín el Cerro</strong> donde tendremos la ceremonia al aire libre primero y luego la fiesta en uno de los salones del lugar.
+          El lugar cuenta con parqueo privado que tiene un costo de <strong>Q 25.00</strong> para todo el evento.
+        </p>
+
+        <p class="lead">
+          💃🕺 <strong>Código de Vestimenta:</strong> Formal / Etiqueta (Vestido y Traje) <em>con tenis</em>.
+          El camino hacia la ceremonia es empedrado y queremos que bailes con nosotros toda la noche, así que prioriza la comodidad y ponte tus tenis favoritos;
+          nosotros también usaremos tenis. La temperatura puede bajar un poco durante la ceremonia, ¡considera un abrigo!
+        </p>
+
+        <p class="lead"><strong>Colores reservados:</strong> Azul y Blanco para los novios. 💙🤍</p>
+
+        <p class="lead">
+          📸 <strong>Fotos:</strong> Contaremos con un fotógrafo y videógrafo profesional que documentarán cada momento.
+          Durante la ceremonia te pedimos guardar tu celular y disfrutar del momento. En la fiesta, toma muchas fotos y súbelas al álbum compartido;
+          queremos disfrutar la boda desde tu punto de vista también.
+        </p>
+
+        <div class="two-col">
+          <!-- Mapa -->
+          <iframe class="map"
+            src="YOUR_GOOGLE_MAPS_EMBED"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+          <!-- Cómo llegar -->
+          <div>
+            <h3>Cómo Llegar</h3>
+            <p>Toma Carretera a El Salvador y toma la carretera a Fraijanes; encontrarás <strong>Jardín el Cerro</strong> en el <strong>Km 22.5</strong>.</p>
+            <a class="btn-wide" href="https://waze.com/ul?ll=14.500333,-90.457639&navigate=yes" target="_blank" rel="noopener">Waze</a>
+          </div>
+        </div>
+
+        <h3 class="section-title">Itinerario</h3>
+        <ul class="schedule">
+          <li>
+            <div class="time">4:30 – 6:00 PM</div>
+            <div>
+              <h5>Ceremonia · El Balcón</h5>
+              <p>La ceremonia civil será al aire libre en “El Balcón”, donde escucharás nuestros votos y la ceremonia civil. Por favor llega a tiempo y toma tu lugar.</p>
+              <p class="note">Puede haber viento; trae un suéter. <em>Better safe than sorry!</em></p>
+            </div>
+          </li>
+          <li>
+            <div class="time">6:00 – 11:00 PM</div>
+            <div>
+              <h5>Recepción · Salón Colonial</h5>
+              <p><strong>6:00 PM —</strong> Cóctel de Bienvenida, mesa 360° de quesos y carnes. Los novios en sesión de fotos.</p>
+              <p><strong>7:00 PM —</strong> Entrada de los Novios y brindis.</p>
+              <p><strong>7:30 PM —</strong> Cena estilo buffet (menú de pollo).</p>
+              <p><strong>9:00 PM —</strong> Partimos el pastel antes de los shots.</p>
+              <p><strong>11:00 PM —</strong> Despedida de los novios.</p>
+            </div>
+          </li>
+        </ul>
+
+        <h3 class="section-title">¿Contaremos con tu presencia?</h3>
+        <p class="lead">Nuestra boda será pequeña y te invitamos porque tu presencia significa mucho para nosotros. Saber con anticipación si contaremos contigo nos ayudará a planear correctamente.</p>
+        <p class="lead"><strong>Si no podrás asistir</strong>, por favor llena el RSVP que encontrarás abajo.</p>
+        <p class="lead">Celebra con nosotros, pero no bebas y manejes. Hay hospedajes cercanos si quieres quedarte; o empieza a tomar agua al menos 1 hora antes de manejar.</p>
+      </div>
+
+      <!-- EN -->
+      <div class="lang-en">
+        <h2 class="section-head">THE BIG DAY <span class="subtitle">July 18, 2026</span></h2>
+
+        <p class="meta"><strong>4:30 PM – 11:00 PM</strong><span class="place">Jardín el Cerro</span></p>
+
+        <img class="figure-right" src="IMG_URL_NOVIOS_TENIS.jpg" alt="Bride and groom in sneakers">
+
+        <p class="lead">
+          The wedding will take place at <strong>Jardín el Cerro</strong>. We’ll have an outdoor ceremony first and then the party in one of the halls.
+          Private parking is available for <strong>Q 25.00</strong> for the whole event.
+        </p>
+
+        <p class="lead">
+          💃🕺 <strong>Dress Code:</strong> Formal / Black-tie (Dress & Suit) <em>with sneakers</em>.
+          The path is cobblestone and we want you to dance all night—please prioritize comfort; we’ll be wearing sneakers too.
+          It may get chilly during the ceremony; consider a light jacket.
+        </p>
+
+        <p class="lead"><strong>Reserved colors:</strong> Blue and White for the couple. 💙🤍</p>
+
+        <p class="lead">
+          📸 <strong>Photos:</strong> We’ll have a professional photographer and videographer. Please put phones away during the ceremony.
+          At the party, take lots of photos and upload them to the shared album—we want to see it through your eyes too.
+        </p>
+
+        <div class="two-col">
+          <iframe class="map"
+            src="YOUR_GOOGLE_MAPS_EMBED"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+          <div>
+            <h3>How to Get There</h3>
+            <p>Take Carretera a El Salvador, then the road to Fraijanes; you’ll find <strong>Jardín el Cerro</strong> at <strong>Km 22.5</strong>.</p>
+            <a class="btn-wide" href="https://waze.com/ul?ll=14.500333,-90.457639&navigate=yes" target="_blank" rel="noopener">Waze</a>
+          </div>
+        </div>
+
+        <h3 class="section-title">Itinerary</h3>
+        <ul class="schedule">
+          <li>
+            <div class="time">4:30 – 6:00 PM</div>
+            <div>
+              <h5>Ceremony · El Balcón</h5>
+              <p>The civil ceremony will be outdoors in “El Balcón”. Please arrive on time and take your seat.</p>
+              <p class="note">It may be windy; bring a sweater. <em>Better safe than sorry!</em></p>
+            </div>
+          </li>
+          <li>
+            <div class="time">6:00 – 11:00 PM</div>
+            <div>
+              <h5>Reception · Salón Colonial</h5>
+              <p><strong>6:00 PM —</strong> Welcome cocktail & 360° cheese/charcuterie board. Couple’s photo session.</p>
+              <p><strong>7:00 PM —</strong> Couple’s entrance and toast.</p>
+              <p><strong>7:30 PM —</strong> Buffet dinner (chicken menu).</p>
+              <p><strong>9:00 PM —</strong> Cake cutting before the shots.</p>
+              <p><strong>11:00 PM —</strong> Farewell from the couple.</p>
+            </div>
+          </li>
+        </ul>
+
+        <h3 class="section-title">Will you be there?</h3>
+        <p class="lead">Our wedding is small and your presence means the world to us. Knowing in advance helps us plan properly.</p>
+        <p class="lead"><strong>If you can’t attend</strong>, please still fill out the RSVP below.</p>
+        <p class="lead">Celebrate with us, but please don’t drink and drive. We’ve listed nearby lodging if you’d like to stay.</p>
+      </div>
+
+    </section>
+
+
+
+    <!-- RSVP -->
+    <section id="rsvp" class="section container">
+      <div class="lang-es">
+        <h2>RSVP</h2>
+        <p>Por favor confirma tu asistencia. Si no ves el formulario, <a href="#" target="_blank" rel="noopener">abre el formulario aquí</a>.</p>
+        <div class="embed placeholder" aria-label="Formulario RSVP">Formulario</div>
+      </div>
+
+      <div class="lang-en">
+        <h2>RSVP</h2>
+        <p>Please confirm your attendance. If you don’t see the form, <a href="#" target="_blank" rel="noopener">open the form here</a>.</p>
+        <div class="embed placeholder" aria-label="RSVP Form">Form</div>
+      </div>
+    </section>
+
+    <!-- REGALOS / GIFTS -->
+    <section id="regalos" class="section container">
+      <div class="lang-es">
+        <h2>Regalos</h2>
+        <p>Tu presencia es el mejor regalo. Si deseas apoyarnos, aquí tienes algunas opciones.</p>
+        <ul class="gift-list">
+          <li>Lista de regalos (enlace)</li>
+          <li>Sobre de boda / efectivo</li>
+          <li>Fondo para luna de miel</li>
+        </ul>
+      </div>
+
+      <div class="lang-en">
+        <h2>Gifts</h2>
+        <p>Your presence is the greatest gift. If you’d like to support us, here are some options.</p>
+        <ul class="gift-list">
+          <li>Gift registry (link)</li>
+          <li>Wedding envelope / cash</li>
+          <li>Honeymoon fund</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- VIAJE / TRAVEL -->
+    <section id="viaje" class="section container">
+      <div class="lang-es">
+        <h2>El Viaje</h2>
+        <div class="grid-2">
+          <div>
+            <h3>Vuelos & Aeropuerto</h3>
+            <p>Aeropuerto Internacional La Aurora (GUA). Te recomendamos llegar 1-2 días antes.</p>
+            <h3>Hospedaje</h3>
+            <p>Opciones en zona 10 / Carretera a El Salvador. Comparte tus planes en el grupo familiar.</p>
+          </div>
+          <div>
+            <h3>Transporte</h3>
+            <p>Servicios de transporte privado o taxis autorizados. Verifica tarifas con anticipación.</p>
+            <h3>Recomendaciones</h3>
+            <p>Trae ropa ligera, protector solar y efectivo en quetzales (GTQ).</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="lang-en">
+        <h2>Travel</h2>
+        <div class="grid-2">
+          <div>
+            <h3>Flights & Airport</h3>
+            <p>La Aurora International Airport (GUA). We recommend arriving 1–2 days early.</p>
+            <h3>Where to stay</h3>
+            <p>Options in Zone 10 / Carretera a El Salvador. Share your plans in the family group.</p>
+          </div>
+          <div>
+            <h3>Transport</h3>
+            <p>Private car services or authorized taxis. Check fares in advance.</p>
+            <h3>Tips</h3>
+            <p>Bring light clothing, sunscreen, and cash in quetzales (GTQ).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container small">
+      <p class="lang-es">&copy; <span id="year"></span> Jess & Mike — ¡Gracias por celebrar con nosotros!</p>
+      <p class="lang-en">&copy; <span id="year"></span> Jess & Mike — Thank you for celebrating with us!</p>
+    </div>
+  </footer>
+
+  <!-- Minimal JS: mobile nav + language detect + manual toggle -->
+  <script>
+    (function () {
+      // Mobile nav toggle
+      const toggle = document.querySelector('.nav-toggle');
+      const menus = document.querySelectorAll('.nav-menu');
+      if (toggle) {
+        toggle.addEventListener('click', () => {
+          menus.forEach(menu => {
+            const open = getComputedStyle(menu).display !== 'none';
+            menu.style.display = open ? 'none' : 'flex';
+          });
+          toggle.setAttribute('aria-expanded', String(toggle.getAttribute('aria-expanded') !== 'true'));
+        });
+      }
+
+      // Year
+      const y = document.getElementById('year');
+      if (y) y.textContent = new Date().getFullYear();
+
+      // Language helpers
+      function saveLang(v){ try { localStorage.setItem('siteLang', v); } catch(e){} }
+      function loadLang(){ try { return localStorage.getItem('siteLang'); } catch(e){ return null; } }
+      function detectLang(){
+        const saved = loadLang();
+        if (saved) return saved;
+        const nav = (navigator.language || 'es').toLowerCase();
+        return nav.startsWith('es') ? 'es' : 'en';
+      }
+      function showLang(lang){
+        // Content blocks: show as block
+        document.querySelectorAll('.lang-es').forEach(el => {
+          el.style.display = (lang === 'es') ? 'block' : 'none';
+        });
+        document.querySelectorAll('.lang-en').forEach(el => {
+          el.style.display = (lang === 'en') ? 'block' : 'none';
+        });
+
+        // Nav menus need flex
+        document.querySelectorAll('ul.nav-menu.lang-es').forEach(el => {
+          el.style.display = (lang === 'es') ? 'flex' : 'none';
+        });
+        document.querySelectorAll('ul.nav-menu.lang-en').forEach(el => {
+          el.style.display = (lang === 'en') ? 'flex' : 'none';
+        });
+
+        // Update buttons + <html lang="">
+        const esBtn = document.getElementById('btn-es');
+        const enBtn = document.getElementById('btn-en');
+        if (esBtn && enBtn) {
+          esBtn.classList.toggle('active', lang === 'es');
+          enBtn.classList.toggle('active', lang === 'en');
+        }
+        document.documentElement.setAttribute('lang', lang);
+      }
+      const current = detectLang();
+      showLang(current);
+
+      // Wire buttons
+      const esBtn = document.getElementById('btn-es');
+      const enBtn = document.getElementById('btn-en');
+      if (esBtn) esBtn.addEventListener('click', () => { saveLang('es'); showLang('es'); });
+      if (enBtn) enBtn.addEventListener('click', () => { saveLang('en'); showLang('en'); });
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,226 @@
+.lang-en, .lang-es { display: none; }
+
+/* ===== BODA (Wedding) styling ===== */
+#boda { --ink:#2a2f36; --muted:#5b6572; --line:#e5e7eb; --shadow:0 10px 20px rgba(0,0,0,.05); }
+
+#boda h2.section-head {
+  display:flex; align-items:baseline; gap:14px;
+  font-size:42px; font-weight:600; letter-spacing:.02em;
+  color:var(--ink); text-transform:uppercase;
+  border-bottom:1px solid var(--line); padding-bottom:14px; margin:0 0 28px;
+}
+#boda h2.section-head .subtitle {
+  font-size:1.5rem; font-weight:300; font-style:italic; text-transform:none; color:var(--muted);
+}
+
+#boda .meta { text-align:center; color:#475569; margin:18px 0 30px; }
+#boda .meta .place { display:block; margin-top:6px; }
+
+#boda .lead { font-size:1.06rem; line-height:1.85; color:#374151; }
+#boda .figure-right { float:right; width:min(360px,42%); margin:0 0 16px 28px;
+  border-radius:10px; box-shadow:var(--shadow); }
+
+#boda .two-col { display:grid; grid-template-columns:1fr 1fr; gap:32px; align-items:start; margin:32px 0; }
+#boda .map, #boda iframe.map { width:100%; height:240px; border:0; border-radius:12px; box-shadow:var(--shadow); }
+
+#boda .btn-wide {
+  display:inline-block; width:100%; max-width:520px; margin:18px 0;
+  background:#111827; color:#fff; padding:12px 16px; border-radius:10px;
+  text-align:center; text-decoration:none;
+}
+
+#boda h3.section-title {
+  margin:40px 0 12px; font-size:36px; font-weight:300; letter-spacing:.06em;
+  text-transform:uppercase; color:#334155;
+}
+
+/* Itinerary list with left time column */
+#boda .schedule { list-style:none; margin:10px 0 0; padding:0; }
+#boda .schedule li {
+  display:grid; grid-template-columns:140px 1fr; gap:24px;
+  padding:18px 0; border-top:1px solid var(--line);
+}
+#boda .schedule li:first-child { border-top:0; }
+#boda .time { color:#475569; font-weight:600; text-align:right; white-space:nowrap; }
+#boda .schedule h5 { margin:0 0 6px; font-size:1.05rem; }
+#boda .note { color:#475569; font-style:italic; }
+
+/* Responsive */
+@media (max-width: 900px){
+  #boda h2.section-head { flex-direction:column; gap:6px; align-items:flex-start; }
+  #boda .figure-right { float:none; width:100%; margin:12px 0; }
+  #boda .two-col { grid-template-columns:1fr; }
+  #boda .schedule li { grid-template-columns:1fr; }
+  #boda .time { text-align:left; }
+}
+
+/* Contenedor ancho para el hero (más ancho que .container) */
+.container-xl { max-width: 1200px; margin: 0 auto; padding: 0 16px; }
+
+/* Hero */
+#home-hero { padding: 36px 0 28px; }
+#home-hero .hero-date{
+  text-align:center;
+  font-weight:300;
+  font-size: clamp(2.2rem, 5.2vw, 56px);
+  letter-spacing:.02em;
+  color:#374151;         /* gris oscuro elegante */
+  margin: 0 0 14px;
+}
+#home-hero .hero-photo{
+  display:block;
+  width:100%;
+  max-width: 1120px;     /* similar a tu captura */
+  margin: 0 auto 18px;
+  height:auto;
+  border-radius:4px;
+  object-fit:cover;
+}
+#home-hero .hero-divider{
+  height:1px;
+  background:#e5e7eb;    /* línea tenue */
+  margin: 8px 0 18px;
+}
+#home-hero .hero-kicker{
+  text-align:center;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+  font-size: clamp(1.1rem, 2vw, 22px);
+  font-weight:700;
+  color:#374151;
+  margin: 0 0 8px;
+}
+#home-hero .hero-sub{
+  text-align:center;
+  color:#6b7280;         /* gris medio */
+  font-size: .98rem;
+  margin: 0 0 8px;
+}
+
+/* Responsive */
+@media (max-width: 900px){
+  #home-hero { padding-top: 24px; }
+  #home-hero .hero-date{ font-size: clamp(1.8rem, 7vw, 44px); }
+}
+
+/* ===== Top nav like the screenshot ===== */
+.site-header{
+  position: sticky; top:0; z-index:100;
+  background:#fff; border-bottom:1px solid #eee;
+}
+
+.nav{
+  max-width: 1200px; margin:0 auto;
+  padding:10px 16px;
+  display:flex; align-items:center; gap:16px;
+}
+
+/* Brand (logo + text) */
+.brand{ display:flex; align-items:center; gap:10px; text-decoration:none; }
+.brand-logo{ width:30px; height:30px; border-radius:50%; object-fit:cover; }
+.brand span{ color:#6b7280; font-weight:400; font-size:20px; }
+
+/* Menus */
+.nav-menu{
+  /* JS shows one as flex, the other is display:none due to lang selector */
+  list-style:none; margin:0 0 0 auto; padding:0;
+  display:flex; align-items:center; gap:28px;
+}
+.nav-menu li{ margin:0; }
+.nav-menu a{
+  text-decoration:none;
+  text-transform:uppercase;
+  letter-spacing:.14em;
+  font-size:.85rem;
+  color:#8b8f96;            /* light gray like screenshot */
+  padding:14px 0;           /* vertical rhythm, bottom border space */
+  border-bottom:2px solid transparent;
+}
+.nav-menu a:hover{
+  color:#111827;
+  border-bottom-color:#d1d5db; /* subtle underline on hover */
+}
+.nav-menu a.active{
+  color:#111827;            /* darker + slight bold for current item */
+  font-weight:600;
+  border-bottom-color:transparent; /* looks like no underline on active */
+}
+
+/* Right side actions (search + hamburger + optional lang switch) */
+.nav-right{ display:flex; align-items:center; gap:10px; margin-left:12px; }
+.nav-search{ background:transparent; border:0; color:#6b7280; padding:6px; cursor:pointer; }
+.nav-search:hover{ color:#111827; }
+.nav-toggle{ display:none; background:transparent; border:0; font-size:20px; padding:6px; cursor:pointer; }
+
+/* Mobile behavior */
+@media (max-width: 900px){
+  .nav{ padding:8px 12px; }
+  .nav-toggle{ display:block; }
+  .nav-menu{
+    position:absolute; left:0; right:0; top:56px;
+    background:#fff; border-bottom:1px solid #eee;
+    padding:12px 20px; gap:14px; display:none; flex-direction:column; align-items:flex-start;
+  }
+  .nav-menu a{ padding:8px 0; letter-spacing:.1em; }
+}
+
+/* ===== HISTORIA (grid de tarjetas con fotos grandes) ===== */
+.container-xl { max-width: 1200px; margin: 0 auto; padding: 0 16px; }
+
+#historia.story { padding-top: 36px; }
+#historia .story-grid{
+  display:grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 44px 40px;            /* row gap / column gap */
+}
+#historia .story-card{ text-align:center; }
+
+#historia .story-img{
+  width:100%; aspect-ratio: 4 / 3;      /* consistente como en la captura */
+  object-fit:cover; border-radius:4px;
+  display:block; margin:0 auto 16px;
+}
+
+#historia .story-title{
+  font-size: clamp(1.2rem, 2.2vw, 26px);
+  line-height:1.25;
+  font-weight:500;
+  color:#334155;             /* gris azulado (como el ejemplo) */
+  margin: 4px 0 12px;
+}
+
+#historia .story-quote{
+  max-width: 360px;          /* bloque más estrecho bajo cada foto */
+  margin: 0 auto;
+  color:#4b5563;             /* gris medio */
+  font-style: italic;
+  line-height:1.8;
+  font-size: 0.98rem;
+}
+
+/* Responsivo: 2 columnas en tablet, 1 en móvil */
+@media (max-width: 1000px){
+  #historia .story-grid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 640px){
+  #historia .story-grid{ grid-template-columns: 1fr; }
+  #historia .story-quote{ max-width: 520px; }
+}
+
+/* Language buttons in the header */
+.lang-switch{ display:flex; align-items:center; gap:8px; margin-right:4px; }
+.lang-btn{
+  padding:6px 10px; border-radius:999px; border:1px solid #e5e7eb;
+  background:#fff; color:#6b7280; cursor:pointer; font-size:.78rem;
+  text-transform:uppercase; letter-spacing:.08em;
+}
+.lang-btn:hover{ color:#111827; border-color:#d1d5db; }
+.lang-btn.active{
+  color:#6d28d9; border-color:#6d28d9; font-weight:600;
+  box-shadow:0 0 0 3px rgba(109,40,217,.15);
+}
+
+/* Keep them visible on mobile; menu collapses separately */
+@media (max-width:900px){
+  .lang-switch{ order:-1; } /* move left of search/hamburger if desired */
+}
